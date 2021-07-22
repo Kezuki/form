@@ -1,0 +1,58 @@
+.button {
+    display: block;
+    color: #000;
+    background-color: #e2e3e7;
+    padding: 12px 26px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.button_plus {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 0;
+    background: transparent;
+}
+
+.button_green {
+    color: #fff;
+    background-color: #64a757;
+}
+
+.button_plus::before,
+.button_plus::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button_plus::before {
+    height: 2px;
+    width: 16px;
+}
+
+.button_plus::after {
+    width: 2px;
+    height: 16px;
+}
+
+.button:hover {
+    background-color: #c7c8cb;
+}
+
+.button_green:hover {
+    background-color: #83bb70;
+}
+
+.button_plus:hover {
+    background: transparent;
+    opacity: 0.7;
+}
