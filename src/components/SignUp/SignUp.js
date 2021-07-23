@@ -7,8 +7,6 @@ import "./SignUp.css";
 const validator = (value, validationFields, checked) => {
     const errors = {};
 
-    console.log(!!value);
-
     for (const validation in validationFields) {
         switch (validation) {
             case "emptyError":
@@ -52,8 +50,6 @@ const SignUpForm = ({ initialData, onSubmit }) => {
     const [checkPassed, setCheckPassed] = useState(false);
 
     useEffect(() => {
-        console.log("init");
-
         if (checkPassed) {
             const finalData = {};
 
@@ -69,7 +65,6 @@ const SignUpForm = ({ initialData, onSubmit }) => {
                     }
                 }
             });
-            console.log(finalData);
             onSubmit(finalData);
         }
     }, [checkPassed]);
