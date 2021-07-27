@@ -19,7 +19,7 @@
     border: 1px solid #fff;
 }
 
-.input-field__label {
+.input-field__label-text {
     position: absolute;
     top: 15px;
     left: 10px;
@@ -34,20 +34,20 @@
     margin-top: 2px;
 }
 
-.input-field__label_active {
+.input-field__label-text_active {
     font-size: 12px;
     transform: translateY(-10px);
 }
 
-.input-field__item:focus + .input-field__label {
+.input-field__item:focus + .input-field__label-text {
     font-size: 12px;
     transform: translateY(-10px);
 }
 
-.input-field__label_error .input-field__item {
+.input-field__label-text_error .input-field__item {
     border: 1px solid #f13653;
 }
 
-.input-field__label_error .input-field__label {
+.input-field__label-text_error .input-field__label-text {
     color: #f13653;
 }
